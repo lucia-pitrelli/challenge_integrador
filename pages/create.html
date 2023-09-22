@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+  </head>
+  <body>
+    <!--Form-->
+    <section>
+      <h1>CREAR NUEVO ITEM</h1>
+
+      <form action="" method="post">
+        <!--categoria-->
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+          <option value="cate1">categoria 1</option>
+          <option value="cate2">categoria 2</option>
+          <option value="cate3">categoria 3</option>
+        </select>
+
+        <!--licencia-->
+        <label for="licencia">Licencia:</label>
+        <input
+          type="text"
+          id="licencia"
+          name="licencia"
+          placeholder="Seleccionar"
+        />
+        <!--producto-->
+        <label for="producto">Nombre del producto:</label>
+        <input type="text" id="producto" name="producto" />
+        <!--descripcion-->
+        <textarea placeholder="Descripción del producto"></textarea>
+
+        <!--SKU-->
+        <label for="sku">SKU:</label>
+        <input type="number" id="sku" name="sku" placeholder="SSK111AB001" />
+        <!--precio-->
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" placeholder="$0" />
+        <!--stock-->
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" placeholder="0" />
+        <!--descuento-->
+        <label for="descuento">Descuento:</label>
+        <input type="number" id="descuento" name="descuento" placeholder="0%" />
+        <!--cuotas-->
+        <label for="cuotas">Cuotas:</label>
+        <select id="cuotas" name="cuotas">
+          <option value="3">3 cuotas sin interés</option>
+          <option value="6">6 cuotas sin interés</option>
+          <option value="12">12 cuotas sin interés</option>
+        </select>
+
+        <!--imagenes-->
+        <label for="image">Imágenes:</label>
+        <input type="file" id="image" name="image" />
+
+        <!--agregar-->
+        <input type="submit" value="Submit" />
+        <!--limpiar-->
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+  </body>
+</html>
