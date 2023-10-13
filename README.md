@@ -2,18 +2,29 @@
 
 ### Mision 1
 
-Creación de la estructura HTML de las diferentes vistas del proyecto, utilizando como referencia el diseño en
+**Creación de la estructura HTML de las diferentes vistas del proyecto, utilizando como referencia el diseño en** [Diseño en Figma]
 https://www.figma.com/file/IjTSeE2BpRd5Gk9VakNIhC/Challenge-Integrador---Funkoshop?type=design&node-id=19905-435&mode=design&t=hfdjsO9WWpVgOzSA-0
 
 Creadores y editores:
--Elias Ezequiel Solis - Pages: Shop
--Lucia Belen Pitrelli - Pages: Login, Index, Create y Edit
--Nahuel Frias - Pages: Item y Carrito
+
+1. Elias Ezequiel Solis - _Pages: Shop_
+2. Lucia Belen Pitrelli - _Pages: Login, Index, Create , Edit y Register_
+3. Nahuel Frias - _Pages: Item y Carrito_
 
 ### Mision 2
 
-Maquetación y estilos mediante CSS de todos los elementos de cada página.
+**Maquetación y estilos mediante CSS de todos los elementos de cada página.**
+
+Creadores y editores:
+
+1. Lucia Belen Pitrelli - _Pages: Index_
 
 ### Mision 3
 
 ### Mision 4
+
+### Mision 5
+
+### Mision 6
+
+### Mision 7(Optional)
