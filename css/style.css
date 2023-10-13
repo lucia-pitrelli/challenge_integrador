@@ -12,6 +12,7 @@
   --light-font-color: #ffffff;
 
   /* Font-sizes*/
+  --xl-size: 46px;
   --l-size: 38px;
   --m-size: 24px;
   --xm-size: 20px;
@@ -39,7 +40,125 @@
 /*INDEX*/
 
 /*banner*/
+.banner {
+  position: relative;
+}
 
 .banner img {
   object-fit: cover;
+  width: 1440px;
+  height: 388px;
+}
+
+.title-banner {
+  color: var(--light-font-color);
+  font-size: var(--l-size);
+  font-weight: var(--l-weight);
+  font-family: var(--primary-font);
+  position: absolute;
+  top: 254px;
+  left: 108px;
+}
+
+.text-banner {
+  color: var(--light-font-color);
+  font-family: var(--primary-font);
+  font-weight: var(--s-weight);
+  font-size: var(--s-size);
+  position: absolute;
+  top: 306px;
+  left: 105px;
+}
+
+.link-shop {
+  color: var(--dark-font-color);
+  background-color: var(--light-bg-color);
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 30px 10px 30px;
+  position: absolute;
+  top: 335px;
+  left: 110px;
+}
+
+/*items*/
+
+.bg-items {
+  width: 1220px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+.item img {
+  width: 600px;
+  height: 600px;
+}
+
+/*new items*/
+
+.container-new {
+  padding: 50px;
+  margin: 50px;
+}
+
+.new {
+  background-color: var(--red-bg-color);
+  color: var(--light-font-color);
+  font-family: var(--secondary-font);
+  font-weight: var(--m-weight);
+  font-size: var(--xxs-size);
+  padding: 5px;
+  margin: 50px;
+}
+
+.new-item {
+  display: flex;
+}
+
+.title-new {
+  color: var(--dark-font-color);
+  font-size: var(--xl-size);
+  font-weight: var(--m-weight);
+  left: 110px;
+}
+
+.new-bg {
+  height: 512px;
+}
+
+.new-img img {
+  width: 350px;
+  height: 352px;
+}
+
+.genre {
+  font-weight: var(--m-weight);
+  font-family: var(--secondary-font);
+  font-size: var(--xxs-size);
+  color: var(--dark-font-colo);
+}
+
+.title-new {
+  color: var(--dark-font-color);
+  font-family: var(--secondary-font);
+  font-weight: var(--l-weight);
+  font-size: var(--s-size);
+}
+
+.price-new {
+  color: var(--dark-font-color);
+  font-family: var(--secondary-font);
+  font-weight: var(--x-weight);
+  font-size: var(--xs-size);
+}
+
+.credit {
+  font-family: var(--secondary-font);
+  font-weight: var(--l-weight);
+  font-size: var(--xxxs-size);
+  color: var(--blue-font-color);
 }

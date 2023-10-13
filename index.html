@@ -10,7 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Home</title>
   </head>
   <body>
@@ -20,13 +20,15 @@
       <!--banner-->
       <div class="banner">
         <img src="./multimedia/funkos-banner.webp" alt="Banner Funkoshop" />
-        <h1>Nuevos Ingresos</h1>
-        <h2>Descubrí el próximo Funko Pop de tu colección</h2>
-        <a href="./pages/shop.html">Shop</a>
+        <h1 class="title-banner">Nuevos Ingresos</h1>
+        <h2 class="text-banner">
+          Descubrí el próximo Funko Pop de tu colección
+        </h2>
+        <a class="link-shop" href="./pages/shop.html">Shop</a>
       </div>
     </header>
     <main>
-      <section>
+      <section class="bg-items">
         <!--first funko-->
         <article>
           <div>
@@ -38,7 +40,7 @@
             <a href="./pages/shop.html">Ver colección</a>
           </div>
 
-          <div>
+          <div class="item">
             <img
               src="./multimedia/star-wars/baby-yoda-1.webp"
               alt="Baby yoda"
@@ -47,7 +49,7 @@
         </article>
         <!--second funko-->
         <article>
-          <div>
+          <div class="item">
             <img
               src="./multimedia/pokemon/vulpix-1.webp"
               alt="Pokemon indigo"
@@ -74,7 +76,7 @@
             <a href="./pages/shop.html">Ver colección</a>
           </div>
 
-          <div>
+          <div class="item">
             <img
               src="./multimedia/harry-potter/snape-patronus-1.webp"
               alt="Harry Potter"
@@ -83,56 +85,48 @@
         </article>
       </section>
 
-      <section>
-        <h2>ÚLTIMOS LANZAMIENTOS</h2>
-        <div>
-          <p>NUEVO</p>
-          <img src="./multimedia/star-wars/trooper-1.webp" alt="Trooper" />
-          <h4>STAR WARS</h4>
-          <h3>STORMTROOPER LIGHTSABER</h3>
-          <p>$1799,99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
-        </div>
-        <div>
-          <p>NUEVO</p>
-          <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto" />
-          <h4>POKEMON</h4>
-          <h3>PIDGEOTTO</h3>
-          <p>$1799,99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
-        </div>
-        <div>
-          <p>NUEVO</p>
-          <img
-            src="./multimedia/harry-potter/luna-1.webp"
-            alt="Luna Lovegood"
-          />
-          <h4>HARRY POTTER</h4>
-          <h3>LUNA LOVEGOOD LION MASK</h3>
-          <p>$1799,99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
+      <section class="container-new">
+        <h2 class="title-new">ÚLTIMOS LANZAMIENTOS</h2>
+        <div class="new-item">
+          <div class="new-bg">
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img src="./multimedia/star-wars/trooper-1.webp" alt="Trooper" />
+            </div>
+            <h4 class="genre">STAR WARS</h4>
+            <h3 class="title-new">STORMTROOPER LIGHTSABER</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
+          <div>
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img
+                src="./multimedia/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto"
+              />
+            </div>
+            <h4 class="genre">POKEMON</h4>
+            <h3 class="title-new">PIDGEOTTO</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
+          <div>
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img
+                src="./multimedia/harry-potter/luna-1.webp"
+                alt="Luna Lovegood"
+              />
+            </div>
+            <h4 class="genre">HARRY POTTER</h4>
+            <h3 class="title-new">LUNA LOVEGOOD LION MASK</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
         </div>
       </section>
     </main>
-
-    <!--pagination-->
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
 
     <!--bootstrap js-->
     <script
