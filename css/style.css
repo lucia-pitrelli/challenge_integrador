@@ -32,4 +32,14 @@
   /*Spacing*/
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*INDEX*/
+
+/*banner*/
+
+.banner img {
+  object-fit: cover;
+}
