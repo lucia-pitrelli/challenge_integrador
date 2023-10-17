@@ -39,7 +39,7 @@
   /*Spacing*/
 }
 
-/*INDEX*/
+/*GENERAL - NAVBAR & FOOTER*/
 /*navbar*/
 .bg-navbar {
   background-color: var(--dark-bg-color);
@@ -52,15 +52,8 @@
 }
 
 .bg-navbar .site-img {
-  width: 100px;
+  width: 200px;
   height: 50px;
-}
-
-.title-site {
-  color: var(--light-font-color);
-  font-size: var(--m-size);
-  font-weight: var(--m-weight);
-  font-family: var(--secondary-font);
 }
 
 .btn-group button {
@@ -82,6 +75,47 @@
   height: 20px;
 }
 
+/*footer*/
+footer {
+  width: 1440px;
+  height: 343px;
+  background-color: var(--dark-bg-color);
+}
+
+.container-footer {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-footer ul li {
+  padding: 2px;
+  list-style: none;
+}
+
+.container-footer a {
+  font-family: var(--primary-font);
+  font-size: var(--xm-size);
+  font-weight: var(--m-weight);
+  color: var(--light-font-color);
+  text-decoration: none;
+}
+
+.container-footer img {
+  width: 140px;
+  height: 110px;
+}
+
+.text-footer {
+  font-family: var(--primary-font);
+  font-size: var(--xm-size);
+  font-weight: var(--m-weight);
+  color: var(--light-font-color);
+  text-align: center;
+}
+
+/*INDEX*/
 /*banner*/
 .banner {
   position: relative;
@@ -125,9 +159,11 @@
 }
 
 /*items*/
-
 .bg-items {
   width: 1220px;
+  margin: 60px;
+  padding: 60px;
+  background-color: var(--light-bg-color);
 }
 
 article {
@@ -136,13 +172,38 @@ article {
   height: 600px;
 }
 
+.title-item {
+  font-family: var(--primary-font);
+  font-weight: var(--m-weight);
+  font-size: var(--l-size);
+  color: var(--dark-font-color);
+}
+
+.text-item {
+  font-family: var(--primary-font);
+  font-size: var(--m-size);
+  font-weight: var(--s-weight);
+  color: var(--dark-font-color);
+}
+
 .item img {
   width: 600px;
   height: 600px;
 }
 
-/*new items*/
+.link-item {
+  color: var(--light-font-color);
+  background-color: var(--dark-bg-color);
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 5px 20px 5px 20px;
+}
 
+hr {
+  border: 3px solid var(--red-bg-color);
+}
+
+/*new items*/
 .container-new {
   padding: 50px;
   margin: 50px;
@@ -156,6 +217,7 @@ article {
   font-size: var(--xxs-size);
   padding: 5px;
   margin: 50px;
+  text-align: center;
 }
 
 .new-item {
@@ -204,4 +266,12 @@ article {
   font-weight: var(--l-weight);
   font-size: var(--xxxs-size);
   color: var(--blue-font-color);
+}
+
+/*SHOP*/
+
+.container-buscador {
+  width: 250px;
+  margin: 50px;
+  padding: 5px;
 }
