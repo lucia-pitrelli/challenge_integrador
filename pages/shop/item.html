@@ -1,52 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Item</title>
-</head>
-<body>
-  <main>
-    <section>
-      <div>
-        <img src="/multimedia/star-wars/baby-yoda-1.webp" alt="">
-      </div>
-      <div>
-        <p>STAR WARS</p>
-        <h2>BABY YODA BLUEBALL</h2>
-        <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-        <p>$ 1799.99</p>
-        <input type="number"><span><button>Agregar al Carrito</button></span><br>
-        <a href="">Ver método de pago</a><span>- 3 CUOTAS SIN INTERÉS</span>
-      </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <title>Item</title>
+  </head>
+  <body>
+    <header>
+      <!--navBar-->
+      <div class="bg-navbar">
+        <img
+          class="site-img"
+          src="../../multimedia/branding/logo_light_horizontal.svg"
+          alt="isotipo"
+        />
 
-    <section>
-      <h2>PRODUCTOS RELACIONADOS</h2>
-      <div>
-        <div>
-          <img src="/multimedia/star-wars/trooper-1.webp" alt="">
-          <p>STAR WARS</p>
-          <p><b>STORMTROOPER LIGHTSABER</b></p>
-          <p>$ 1799.99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button
+            type="button"
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            SHOP
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
         </div>
-        <div>
-          <img src="/multimedia/pokemon/pidgeotto-1.webp" alt="">
-          <p>POKEMON</p>
-          <p><b>PIDGEOTTO</b></p>
-          <p>$ 1799.99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
-        </div>
-        <div>
-          <img src="/multimedia/harry-potter/luna-1.webp" alt="">
-          <p>HARRY POTTER</p>
-          <p><b>LUNA LOVEGOOD LION MASK</b></p>
-          <p>$ 1799.99</p>
-          <p>3 CUOTAS SIN INTERÉS</p>
-        </div>
+        <ul class="list">
+          <li>CONTACTO</li>
+          <li>LOGIN</li>
+        </ul>
+        <img
+          class="cart-img"
+          src="../../multimedia/icons/cart-icon.svg"
+          alt="cart"
+        />
       </div>
-    </section>
-  </main>
-</body>
+    </header>
+    <main>
+      <!--un item-->
+      <section class="container-item">
+        <div>
+          <img
+            class="item"
+            src="../../multimedia/star-wars/baby-yoda-1.webp"
+            alt=""
+          />
+        </div>
+        <div>
+          <p>STAR WARS</p>
+          <h2>BABY YODA BLUEBALL</h2>
+          <p>
+            Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
+            edición limitada.
+          </p>
+          <p>$ 1799.99</p>
+          <input class="price-input" type="number" /><span
+            ><button>Agregar al Carrito</button></span
+          ><br />
+          <a href="">Ver método de pago</a><span>- 3 CUOTAS SIN INTERÉS</span>
+        </div>
+      </section>
+
+      <!--productos relacionados-->
+      <section class="container-new">
+        <h2 class="title-new">PRODUCTOS RELACIONADOS</h2>
+        <div class="new-item">
+          <div class="new-bg">
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img
+                src="../../multimedia/star-wars/trooper-1.webp"
+                alt="Trooper"
+              />
+            </div>
+            <h4 class="genre">STAR WARS</h4>
+            <h3 class="title-new">STORMTROOPER LIGHTSABER</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
+          <div>
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img
+                src="../../multimedia/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto"
+              />
+            </div>
+            <h4 class="genre">POKEMON</h4>
+            <h3 class="title-new">PIDGEOTTO</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
+          <div>
+            <p class="new">NUEVO</p>
+            <div class="new-img">
+              <img
+                src="../../multimedia/harry-potter/luna-1.webp"
+                alt="Luna Lovegood"
+              />
+            </div>
+            <h4 class="genre">HARRY POTTER</h4>
+            <h3 class="title-new">LUNA LOVEGOOD LION MASK</h3>
+            <p class="price-new">$1799,99</p>
+            <p class="credit">3 CUOTAS SIN INTERÉS</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <ul>
+          <li><a href="./pages/shop/shop.html">SHOP</a></li>
+          <li><a href="./pages/admin/login.html">INGRESAR</a></li>
+          <li><a href="/">CONTACTO</a></li>
+        </ul>
+        <img src="../../multimedia/branding/isotype.svg" alt="logo" />
+      </div>
+      <p class="text-footer">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -35,8 +35,6 @@
   --l-weight: 700;
   --m-weight: 500;
   --s-weight: 400;
-
-  /*Spacing*/
 }
 
 /*GENERAL - NAVBAR & FOOTER*/
@@ -269,9 +267,36 @@ hr {
 }
 
 /*SHOP*/
-
 .container-buscador {
   width: 250px;
   margin: 50px;
   padding: 5px;
+}
+
+.title-buscador {
+  font-family: var(--secondary-font);
+  font-weight: var(--m-weight);
+  font-size: var(--m-size);
+  color: var(--dark-font-color);
+  padding-top: 15px;
+}
+
+input {
+  text-align: center;
+  border: 1.5px solid var(--dark-font-color);
+}
+
+.price-input {
+  width: 30px;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*ITEM*/
+.container-item {
+  display: flex;
+  align-items: center;
 }

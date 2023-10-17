@@ -8,7 +8,9 @@ https://www.figma.com/file/IjTSeE2BpRd5Gk9VakNIhC/Challenge-Integrador---Funkosh
 Creadores y editores:
 
 1. Elias Ezequiel Solis - _Pages: Shop y Admin_
+
 2. Lucia Belen Pitrelli - _Pages: Login, Index, Create , Edit y Register_
+
 3. Nahuel Frias - _Pages: Item y Carrito_
 
 **Mision 1 completo**
@@ -19,7 +21,9 @@ Creadores y editores:
 
 Creadores y editores:
 
-1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito _
+1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item_
+
+1. Elias Ezequiel Solis - _Pages:_
 
 ### Mision 3
 
