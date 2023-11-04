@@ -1,43 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-  </head>
-  <body>
-    <section>
-      <h1>CREA TU CUENTA</h1>
-      <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-      <form action="" method="">
-        <!--name-->
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" />
 
-        <!--fullname-->
-        <label for="fullname">Apellido:</label>
-        <input type="text" id="fullname" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/styleadmin.css">
+</head>
 
-        <!--email-->
-        <label for="email">Email:</label>
-        <input type="email" id="email" />
+<body>
+  <header>
+    <nav class="navbar container">
 
-        <!--contraseña-->
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" />
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="aca el logo...">
+        </a>
+      </picture>
 
-        <!-- repetir contraseña-->
-        <label for="repetir-contraseña">Repetir Contraseña:</label>
-        <input type="password" id="repetir-contraseña" />
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="">VER TIENDA</a>
+        </li>
 
-        <!--Acepto-->
-        <input type="checkbox" name="agree" id="agree" />
-        <label for="agree">Acepto</label>
-        <a href="#">Términos y condiciones</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">ADMIN</a>
+        </li>
 
-        <!--enviar-->
-        <button type="submit">Registrar</button>
-      </form>
-    </section>
-  </body>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">SALIR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+  <section class="login container">
+    <h2 class="login__title">CREA TU CUENTA</h2>
+    <p class="register__info">Completa el formulario para ser parte del mundo de los Funkos</p>
+    <form class="login__form" action="" method="">
+      <!--name-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="name">Nombre:</label>
+        <input class="login__form__textbox" type="text" id="name" placeholder="elias" />
+      </div>
+
+
+      <!--fullname-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="fullname">Apellido:</label>
+        <input class="login__form__textbox" type="text" id="fullname" placeholder="solis" />
+      </div>
+
+      <!--email-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="email">Email:</label>
+        <input class="login__form__textbox" type="email" id="email" placeholder="elias@gmail.com" />
+      </div>
+
+      <!--contraseña-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="contraseña">Contraseña:</label>
+        <input class="login__form__textbox" type="password" id="contraseña"  placeholder="●●●●●●●●●●●"/>
+      </div>
+
+      <!-- repetir contraseña-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="repetir-contraseña">Repetir Contraseña:</label>
+        <input class="login__form__textbox" type="password" id="repetir-contraseña" placeholder="●●●●●●●●●●●" />
+      </div>
+
+      <!--Acepto-->
+      <div class="login__form-enviar">
+        <button class="login__form__btn"type="submit">Registrar</button>
+        <div class="login__form-recuerdame">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">Acepto</label>
+        </div>
+        <a class="login__form-olvidar" href="#">Términos y condiciones</a>
+        
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">CONTACTO</a>
+        </li>
+      </ul>
+      <picture class="">
+        <img src="../../multimedia/branding/isotype.svg" alt="aca un logo">
+      </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkshop &copy;</p>
+  </footer>
+</body>
+
 </html>

@@ -1,0 +1,334 @@
+:root {
+    --primary-solid: #FF3333;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /*  tipografia  */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* tamaño de fuente*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*  espacios  */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-48: 4.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+/*normalizacion*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-68);
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+/* Login*/
+.login {
+    margin: var(--spacing-48) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+.login__title {
+    text-align: center;
+    font-size: var(--font-jumbo);
+    font-family: var(--alternative-font);
+    color: var(--dark-bg-solid);
+}
+
+.login__form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+.login__form-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: var(--spacing-16);
+    align-items: center;
+
+}
+
+.login__form__label {
+
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-medium);
+
+}
+
+.login__form__textbox {
+
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    padding: var(--spacing-8);
+    font-size: var(--font-medium);
+}
+
+.login__form-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-16);
+
+}
+
+.login__form__btn {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12) var(--spacing-28);
+    border: none;
+}
+
+.login__form-recuerdame {
+    font-size: var(--font-medium);
+    color: var(--dark-900);
+}
+
+.login__form-olvidar {
+    text-align: center;
+    color: var(--secondary-900);
+    font-size: var(--font-small);
+}
+
+
+/*register*/
+
+.register {
+    margin: var(--spacing-48) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+.register__info {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    text-align: center;
+}
+
+/*footer*/
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+
+}
+
+.footer__copy {
+    text-align: center;
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    margin-top: var(--spacing-36);
+}
+
+/*Create*/
+
+.create {
+    margin: var(--spacing-48) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+
+}
+
+.form-create {
+    justify-content: center;
+}
+
+.form-create-parte1 {
+    display: flex;
+}
+
+.form-create-label {
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: var(--font-medium);
+
+}
+
+.create__form-box {
+    margin-top: var(--spacing-16);
+    margin-bottom: var(--spacing-16);
+    margin-right: var(--spacing-16);
+    align-items: center;
+}
+
+.create-select {
+
+    padding: var(--spacing-8);
+    font-size: var(--font-small);
+    margin-left: var(--font-small);
+    width: auto;
+
+}
+
+.create-input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    padding: 0;
+    /* Quita el relleno para que el tamaño sea el del texto */
+    font-size: var(--font-medium);
+    /* Establece el tamaño de fuente deseado */
+
+}
+
+.create__form-box textarea {
+    width: 75%;
+    height: 100px;
+    /* El textarea se ajustará automáticamente al contenido */
+}
+
+.create-btn {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12) var(--spacing-28);
+    border: none;
+    margin-right: var(--spacing-16);
+
+}
+
+.create__title {
+
+    font-size: var(--font-jumbo);
+    font-family: var(--alternative-font);
+    color: var(--dark-bg-solid);
+}
+
+.admin-form {
+    margin-top: var(--spacing-16);
+    margin-bottom: var(--spacing-16);
+}
+
+.admin-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.create__title {
+    flex-grow: 8;
+}
+
+.admin-enlace {
+    flex-grow: 1;
+}
+
+.admin-parrafo {
+    flex-grow: 1;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    font-family: var(--alternative-font);
+    color: var(--dark-bg-solid);
+}
+
+.admin-table{
+    font-size: var(--font-small);
+}

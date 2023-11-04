@@ -4,22 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styleadmin.css">
+
   </head>
   <body>
-    <div>
-      <form action="">
-        <label for="buscar">aca la lupita</label>
-        <input type="text" name="buscar" id="buscar">
+    <header>
+      <nav class="navbar container">
+  
+        <picture class="navbar__logo">
+          <a href="../../index.html">
+            <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="aca el logo...">
+          </a>
+        </picture>
+  
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="">VER TIENDA</a>
+          </li>
+  
+          <li class="navbar__item">
+            <a class="navbar__link" href="">ADMIN</a>
+          </li>
+  
+          <li class="navbar__item">
+            <a class="navbar__link" href="">SALIR</a>
+          </li>
+  
+        </ul>
+      </nav>
+  
+    </header>
+    <div class="container">
+      <form class="admin-form" action="">
+        <label class="form-create-label" for="buscar">aca la lupita</label>
+        <input class="create-select"  type="text" name="buscar" id="buscar" placeholder="codigo, nombre o categoria">
       </form>
     </div>
-    <div>
-      <div>
-        <h2>LISTADO DE PRODUCTOS</h2>
-        <P>AGREGAR</P>
-        <a href="">aca el logo agregar</a>
+    <div class="container">
+      <div class=" admin-box">
+        <h2  class="create__title">LISTADO DE PRODUCTOS</h2>
+        
+        
+        <p class="admin-parrafo">AGREGAR</p>
+        <a class="admin-enlace" href="">aca el logo agregar</a>
+      
       </div>
       
-      <table >
+      <table class="table admin-table">
         <thead>
           <tr>
             <th >ID</th>
@@ -39,5 +72,31 @@
         </tbody>
       </table>
     </div>
+
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">CONTACTO</a>
+          </li>
+        </ul>
+        <picture class="">
+          <img src="../../multimedia/branding/isotype.svg" alt="aca un logo">
+        </picture>
+      </nav>
+      <p class="footer__copy">All rights reserved 2023 - Funkshop &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-  </head>
-  <body>
-    <section>
-      <h1>INGRESAR A MI CUENTA</h1>
 
-      <form action="" method="">
-        <!--email-->
-        <label for="email">Email:</label>
-        <input type="email" id="email" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/styleadmin.css">
+</head>
 
-        <!--contraseña-->
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" />
+<body>
 
-        <!--Recordarme-->
-        <input type="checkbox" name="remember" id="remember" />
-        <label for="remember">Recordarme</label>
+  <header>
+    <nav class="navbar container">
 
-        <!--enviar-->
-        <button type="submit">Ingresar</button>
-      </form>
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="aca el logo...">
+        </a>
+      </picture>
 
-      <!--register link-->
-      <a href="/">Olvidé mi contraseña</a>
-    </section>
-  </body>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="">VER TIENDA</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="">ADMIN</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="">SALIR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="login container">
+    <h2 class="login__title">INGRESAR A MI CUENTA</h2>
+
+    <form class="login__form" action="" method="">
+      <!--email-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="email">Email:</label>
+        <input class="login__form__textbox" type="email" id="email" placeholder="elias3847040@gmail.com" />
+      </div>
+
+      <!--contraseña-->
+      <div class="login__form-box">
+        <label class="login__form__label" for="contraseña">Contraseña:</label>
+        <input class="login__form__textbox" type="password" id="contraseña" placeholder="●●●●●●●●●●●" />
+      </div>
+
+      <!--enviar-->
+      <div class="login__form-enviar">
+        <button class="login__form__btn" type="submit">Ingresar</button>
+        <div class="login__form-recuerdame">
+          <input type="checkbox">
+          <label for="">Recordarme</label>
+        </div>
+      </div>
+      <a class="login__form-olvidar" href="/">Olvidé mi contraseña</a>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="">CONTACTO</a>
+        </li>
+      </ul>
+      <picture class="">
+        <img src="../../multimedia/branding/isotype.svg" alt="aca un logo">
+      </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkshop &copy;</p>
+  </footer>
+
+</body>
+
 </html>
