@@ -224,8 +224,16 @@ hr {
   text-align: center;
 }
 
-.new-item {
-  display: flex;
+iconify-icon{
+  color: var(--dark-bg-color);
+}
+
+.glide__arrow--right{
+  right: 0;
+}
+
+.glide__arrow--left{
+  left: 0;
 }
 
 .title-new {
