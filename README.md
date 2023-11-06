@@ -38,13 +38,16 @@ Creadores y editores:
 
 1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item_
 
-2. Elias Ezequiel Solis - _Pages:_
+2. Elias Ezequiel Solis - _Pages: Admin, Create, Edit, Login, Register
 
 ### Mision 3
 
 **Dinamismo al sitio mediante el uso de JavaScript**
 
-Creadores y editores:
+Creadores y editores: 
+1. Lucia Belen Pitrelli - _Pages: 
+
+2. Elias Ezequiel Solis - _Pages: Index
 
 ### Mision 4
 
