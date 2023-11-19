@@ -24,6 +24,7 @@
   /* Font-sizes*/
   --xl-size: 46px;
   --l-size: 38px;
+  --med-size: 32px;
   --m-size: 24px;
   --xm-size: 20px;
   --s-size: 18px;
@@ -37,6 +38,7 @@
 
   /*Font-weight*/
   --l-weight: 700;
+  --xm-weight: 600;
   --m-weight: 500;
   --s-weight: 400;
 

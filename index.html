@@ -10,6 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!--style css-->
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/styleShop.css" />
     <!--glidejs css CDN-->
@@ -128,6 +129,7 @@
         </article>
       </section>
 
+      <!--ultimos lanzamientos-->
       <section class="container-new glide">
         <h2 class="title-new">ÚLTIMOS LANZAMIENTOS</h2>
         <div class="glide__track" data-glide-el="track">
@@ -221,15 +223,16 @@
         type: "carousel",
         startAt: 0,
         perView: 3,
+        gap: 30,
+        breakpoints: {
+          991: {
+            perView: 2,
+          },
+          768: {
+            perView: 1,
+          },
+        },
       }).mount();
     </script>
-
-    <!-- <script>
-      let bgNavbar = document.getElementsByClassName("dropdown-menu");
-
-      bgNavbar.addEventListener("focus", (event) => {
-        event.target.style.backgroundColor = "red";
-      });
-    </script>-->
   </body>
 </html>

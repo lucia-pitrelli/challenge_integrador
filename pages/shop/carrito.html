@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <!--navBar MODIFICAR-->
+      <!--navBar-->
       <div class="bg-navbar">
         <img
           class="site-img"
@@ -35,11 +35,9 @@
             SHOP
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li><a class="dropdown-item" href="#">Funkos</a></li>
+            <li><a class="dropdown-item" href="#">Remeras</a></li>
+            <li><a class="dropdown-item" href="#">Llaveros</a></li>
           </ul>
           <button type="button">CONTACTO</button>
           <button type="button">LOGIN</button>
@@ -50,6 +48,8 @@
           alt="cart"
         />
       </div>
+
+      <!--carrito-->
     </header>
     <main class="container-carrito">
       <div class="container-title">
@@ -58,13 +58,13 @@
       </div>
 
       <section class="container-section">
-        <table class="container-table">
-          <tr class="title-table">
-            <th>DETALLE DE PRODUCTO</th>
-            <th>CANTIDAD</th>
-            <th>TOTAL</th>
-          </tr>
-        </table>
+        <div class="container-table">
+          <div class="title-table">
+            <p>DETALLE DE PRODUCTO</p>
+            <p>CANTIDAD</p>
+            <p>TOTAL</p>
+          </div>
+        </div>
 
         <table class="container-table">
           <tr>
@@ -77,7 +77,26 @@
 
               <p class="price-cart">precio: $1799.99</p>
             </td>
-            <td><input class="input-cart" type="number" value="2" /></td>
+            <td>
+              <!--form-->
+              <form
+                action="#"
+                method="POST"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <input
+                  id="contar"
+                  class="input-cart"
+                  type="number"
+                  value="2"
+                  name="contar"
+                />
+                <button id="sumar" class="carrito-item" type="button">+</button>
+                <button id="restar" class="carrito-item" type="button">
+                  -
+                </button>
+              </form>
+            </td>
             <td class="total-price">$3599.98</td>
             <td><button class="delete-item">X</button></td>
           </tr>
@@ -92,7 +111,26 @@
               <p class="genre-cart">POKEMON</p>
               <p class="price-cart">precio: $1799.99</p>
             </td>
-            <td><input class="input-cart" type="number" value="1" /></td>
+            <td>
+              <!--form-->
+              <form
+                action="#"
+                method="POST"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <input
+                  id="contar"
+                  class="input-cart"
+                  type="number"
+                  value="2"
+                  name="contar"
+                />
+                <button id="sumar" class="carrito-item" type="button">+</button>
+                <button id="restar" class="carrito-item" type="button">
+                  -
+                </button>
+              </form>
+            </td>
             <td class="total-price">$1799.99</td>
             <td><button class="delete-item">X</button></td>
           </tr>
@@ -100,20 +138,22 @@
       </section>
 
       <!-- resumen-->
-      <section class="container-resumen">
-        <div class="container-subtitle">
-          <h2 class="cart-title">RESUMEN</h2>
-          <hr />
-        </div>
-        <div>
-          <p>CANTIDAD DE ELEMENTOS</p>
-          <p>SUBTOTAL</p>
-          <p>ENVIO</p>
-          <hr />
-          <p>TOTAL</p>
-        </div>
+      <section class="pagar-section">
+        <div class="container-resumen">
+          <div class="container-subtitle">
+            <h2 class="cart-title">RESUMEN</h2>
+            <hr />
+          </div>
+          <div class="detail-cart">
+            <p>CANTIDAD DE ELEMENTOS</p>
+            <p>SUBTOTAL</p>
+            <p>ENVIO</p>
+            <hr />
+            <p class="name-cart">TOTAL</p>
+          </div>
 
-        <button class="pagar-cart">IR A PAGAR</button>
+          <button class="pagar-cart">IR A PAGAR</button>
+        </div>
       </section>
     </main>
 
@@ -128,6 +168,9 @@
       </div>
       <p class="text-footer">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+
+    <!-- item js-->
+    <script src="../../js/item.js"></script>
 
     <!--bootstrap js-->
     <script

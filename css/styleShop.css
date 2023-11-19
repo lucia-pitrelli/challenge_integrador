@@ -109,6 +109,7 @@ hr {
   font-family: var(--secondary-font);
   font-weight: var(--m-weight);
   font-size: var(--xxs-size);
+  border: 1px solid var(--red-bg-color);
   padding: 5px;
   margin: 50px;
   text-align: center;
@@ -124,10 +125,6 @@ hr {
   font-weight: var(--m-weight);
   left: 110px;
 }
-
-/*.new-bg {
-  height: 512px;
-}*/
 
 .new-img img {
   width: 350px;
@@ -202,13 +199,14 @@ hr {
   padding-top: 15px;
 }
 
+/*REVISAR*/
 input {
   text-align: center;
   border: 1.5px solid var(--dark-font-color);
 }
 
 .price-input {
-  width: 30px;
+  width: 40px;
 }
 
 .page {
@@ -253,6 +251,14 @@ input {
   font-weight: var(--s-size);
 }
 
+.contar-item {
+  width: 20px;
+  text-align: center;
+  border: 1.5px solid var(--grey-dark-font-color);
+  color: var(--light-font-color);
+  background-color: var(--dark-bg-color);
+}
+
 /*CARRITO*/
 .container-carrito {
   max-width: 1200px;
@@ -290,7 +296,18 @@ input {
 }
 
 .title-table {
+  width: 70%;
   height: 51px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-table p {
+  font-family: var(--secondary-font);
+  font-weight: var(--l-weight);
+  font-size: var(--xs-size);
+  color: var(--dark-font-color);
 }
 
 th {
@@ -318,12 +335,14 @@ td {
   font-size: var(--m-size);
   color: var(--dark-font-color);
 }
+
 .genre-cart {
   font-family: var(--secondary-font);
   font-weight: var(--m-weight);
   font-size: var(--xxs-size);
   color: var(--bluedark-font-color);
 }
+
 .price-cart {
   font-family: var(--secondary-font);
   font-weight: var(--s-weight);
@@ -334,6 +353,14 @@ td {
 .input-cart {
   width: 70px;
   border: 1px solid var(--grey-dark-font-color);
+}
+
+.carrito-item {
+  width: 20px;
+  text-align: center;
+  border: 1.5px solid var(--grey-dark-font-color);
+  color: var(--light-font-color);
+  background-color: var(--red-bg-color);
 }
 
 .total-price {
@@ -351,12 +378,18 @@ td {
   background-color: var(--light-bg-color);
 }
 
+.pagar-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .container-resumen {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   margin-bottom: 50px;
   margin-top: 50px;
+  padding: 20px;
+  width: 50%;
 }
 
 .cart-title {
@@ -370,14 +403,30 @@ td {
   padding-bottom: 20px;
 }
 
+.container-subtitle hr {
+  width: 45%;
+}
+
+.detail-cart {
+  border: 3px solid var(--grey-font-color);
+  border-radius: 25px;
+  padding: 20px;
+  font-family: var(--secondary-font);
+  font-weight: var(--xm-weight);
+  font-size: var(--xs-size);
+  color: var(--dark-font-color);
+}
+
 .pagar-cart {
   background-color: var(--red-bg-color);
   color: var(--light-font-color);
   font-family: var(--secondary-font);
-  font-weight: var(--m-weight);
-  font-size: var(--xxs-size);
-  padding: 10px;
-  width: 195px;
+  font-weight: var(--l-weight);
+  font-size: var(--med-size);
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%px;
+  border: 1px solid var(--red-bg-color);
   text-align: center;
 }
 

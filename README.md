@@ -46,7 +46,11 @@ Creadores y editores:
 
 Creadores y editores:
 
+2. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
+
 ### Mision 4
+
+1. Elias Ezequiel Solis
 
 ### Mision 5
 
