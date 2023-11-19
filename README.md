@@ -36,7 +36,7 @@ Creadores y editores:
 
 Creadores y editores:
 
-1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item_
+1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
 
 2. Elias Ezequiel Solis - _Pages:_
 

@@ -11,11 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/styleShop.css" />
     <title>Carrito</title>
   </head>
   <body>
     <header>
-      <!--navBar-->
+      <!--navBar MODIFICAR-->
       <div class="bg-navbar">
         <img
           class="site-img"
@@ -50,64 +51,70 @@
         />
       </div>
     </header>
-    <main>
-      <h2>CARRITO DE COMPRAS</h2>
-      <hr />
-
-      <table>
-        <tr>
-          <th></th>
-          <th>DETALLE DE PRODUCTO</th>
-          <th></th>
-          <th>CANTIDAD</th>
-          <th></th>
-          <th>TOTAL</th>
-        </tr>
-        <tr>
-          <td>
-            <img src="../../multimedia/star-wars/baby-yoda-1.webp" alt="" />
-          </td>
-          <td>
-            <p><b>BABY YODA BLUEBALL</b></p>
-            <p>START WARS</p>
-            <br />
-            <p>precio: $1799.99</p>
-          </td>
-          <td><input type="number" value="2" /></td>
-          <td>$3599.98</td>
-          <td><button>X</button></td>
-        </tr>
-        <tr>
-          <td>
-            <img src="../../multimedia/pokemon/pidgeotto-1.webp" alt="" />
-          </td>
-          <td>
-            <p><b>PIDGEOTTO</b></p>
-            <p>POKEMON</p>
-            <br />
-            <p>precio: $1799.99</p>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$1799.99</td>
-          <td><button>X</button></td>
-        </tr>
-      </table>
-
-      <!--table resumen-->
-      <h2>RESUMEN</h2>
-      <hr />
-      <div>
-        <div>
-          <p><b>CANTIDAD DE ELEMENTOS</b></p>
-          <p><b>SUBTOTAL</b></p>
-          <p><b>ENVIO</b></p>
-          <hr />
-          <p><b>TOTAL</b></p>
-        </div>
-        <div>
-          <button>IR A PAGAR</button>
-        </div>
+    <main class="container-carrito">
+      <div class="container-title">
+        <h2 class="cart-title">CARRITO DE COMPRAS</h2>
+        <hr />
       </div>
+
+      <section class="container-section">
+        <table class="container-table">
+          <tr class="title-table">
+            <th>DETALLE DE PRODUCTO</th>
+            <th>CANTIDAD</th>
+            <th>TOTAL</th>
+          </tr>
+        </table>
+
+        <table class="container-table">
+          <tr>
+            <td class="img-cart">
+              <img src="../../multimedia/star-wars/baby-yoda-1.webp" alt="" />
+            </td>
+            <td>
+              <p class="name-cart">BABY YODA BLUEBALL</p>
+              <p class="genre-cart">START WARS</p>
+
+              <p class="price-cart">precio: $1799.99</p>
+            </td>
+            <td><input class="input-cart" type="number" value="2" /></td>
+            <td class="total-price">$3599.98</td>
+            <td><button class="delete-item">X</button></td>
+          </tr>
+        </table>
+        <table class="container-table">
+          <tr>
+            <td class="img-cart">
+              <img src="../../multimedia/pokemon/pidgeotto-1.webp" alt="" />
+            </td>
+            <td>
+              <p class="name-cart">PIDGEOTTO</p>
+              <p class="genre-cart">POKEMON</p>
+              <p class="price-cart">precio: $1799.99</p>
+            </td>
+            <td><input class="input-cart" type="number" value="1" /></td>
+            <td class="total-price">$1799.99</td>
+            <td><button class="delete-item">X</button></td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- resumen-->
+      <section class="container-resumen">
+        <div class="container-subtitle">
+          <h2 class="cart-title">RESUMEN</h2>
+          <hr />
+        </div>
+        <div>
+          <p>CANTIDAD DE ELEMENTOS</p>
+          <p>SUBTOTAL</p>
+          <p>ENVIO</p>
+          <hr />
+          <p>TOTAL</p>
+        </div>
+
+        <button class="pagar-cart">IR A PAGAR</button>
+      </section>
     </main>
 
     <footer>

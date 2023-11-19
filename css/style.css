@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +19,7 @@
   --grey-font-color: #c9c9c9;
   --grey-dark-font-color: #333333;
   --light-font-color: #ffffff;
+  --red-font-color: #ff3333;
 
   /* Font-sizes*/
   --xl-size: 46px;
@@ -29,8 +32,8 @@
   --xxxs-size: 12px;
 
   /*Typography*/
-  --primary-font: Raleway;
-  --secondary-font: Inter;
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font: "Inter", sans-serif;
 
   /*Font-weight*/
   --l-weight: 700;
@@ -71,6 +74,21 @@
   background-color: var(--dark-bg-color);
   color: var(--light-font-color);
   border-style: none;
+  transition: backgroung 0.3s ease-in-out;
+}
+
+.btn-group button:hover {
+  background-color: var(--red-bg-color);
+}
+
+.dropdown-menu {
+  background-color: var(--dark-bg-color);
+}
+
+.dropdown-item {
+  background-color: var(--dark-bg-color);
+  color: var(--light-font-color);
+  transition: backgroung 0.3s ease-in-out;
 }
 
 .bg-navbar .cart-img {
