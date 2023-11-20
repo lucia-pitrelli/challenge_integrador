@@ -28,7 +28,7 @@ Creadores y editores:
 
 3. Nahuel Frias - _Pages: Item y Carrito_
 
-**Mision 1 completo**
+**Mision 1 completa**
 
 ### Mision 2
 
@@ -38,26 +38,27 @@ Creadores y editores:
 
 1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
 
-2. Elias Ezequiel Solis - _Pages: Admin, Create, Edit, Login, Register
+2. Elias Ezequiel Solis - _Pages: Admin, Create, Edit, Login, Register_
+
+**Mision 2 completa**
 
 ### Mision 3
 
 **Dinamismo al sitio mediante el uso de JavaScript**
 
-Creadores y editores: 
-1. Lucia Belen Pitrelli - _Pages: 
+Creadores y editores:
 
-2. Elias Ezequiel Solis - _Pages: Index
+1. Lucia Belen Pitrelli - _Pages: Index, Item y Carrito_
 
-1. Elias Ezequiel Solis
+2. Elias Ezequiel Solis - _Pages: Index_
 
-2. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
+**Mision 3 completa**
 
 ### Mision 4
 
-Creadores y editores:
-
 **Implementación al proyecto de NodeJS + Express**
+
+Creadores y editores:
 
 1. Elias Ezequiel Solis
 
@@ -65,6 +66,12 @@ Creadores y editores:
 
 **Migración de archivos HTML al motor de plantillas EJS**
 
+Creadores y editores:
+
+1. Elias Ezequiel Solis
+
+2. Lucia Belen Pitrelli
+
 ### Mision 6
 
-### Mision 7(Optional)
+### Mision 7 (Opcional)
