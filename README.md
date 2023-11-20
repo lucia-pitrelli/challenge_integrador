@@ -36,7 +36,7 @@ Creadores y editores:
 
 Creadores y editores:
 
-1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item_
+1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
 
 2. Elias Ezequiel Solis - _Pages: Admin, Create, Edit, Login, Register
 
@@ -49,9 +49,21 @@ Creadores y editores:
 
 2. Elias Ezequiel Solis - _Pages: Index
 
+1. Elias Ezequiel Solis
+
+2. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
+
 ### Mision 4
 
+Creadores y editores:
+
+**Implementación al proyecto de NodeJS + Express**
+
+1. Elias Ezequiel Solis
+
 ### Mision 5
+
+**Migración de archivos HTML al motor de plantillas EJS**
 
 ### Mision 6
 
