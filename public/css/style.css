@@ -1,4 +1,6 @@
-* {
+* ,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,10 +19,12 @@
   --grey-font-color: #c9c9c9;
   --grey-dark-font-color: #333333;
   --light-font-color: #ffffff;
+  --red-font-color: #ff3333;
 
   /* Font-sizes*/
   --xl-size: 46px;
   --l-size: 38px;
+  --med-size: 32px;
   --m-size: 24px;
   --xm-size: 20px;
   --s-size: 18px;
@@ -34,6 +38,7 @@
 
   /*Font-weight*/
   --l-weight: 700;
+  --xm-weight: 600;
   --m-weight: 500;
   --s-weight: 400;
 
@@ -71,6 +76,21 @@
   background-color: var(--dark-bg-color);
   color: var(--light-font-color);
   border-style: none;
+  transition: backgroung 0.3s ease-in-out;
+}
+
+.btn-group button:hover {
+  background-color: var(--red-bg-color);
+}
+
+.dropdown-menu {
+  background-color: var(--dark-bg-color);
+}
+
+.dropdown-item {
+  background-color: var(--dark-bg-color);
+  color: var(--light-font-color);
+  transition: backgroung 0.3s ease-in-out;
 }
 
 .bg-navbar .cart-img {
