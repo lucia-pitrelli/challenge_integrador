@@ -1,60 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito</title>
-</head>
-<body>
-  <main>
-    <h2>CARRITO DE COMPRAS</h2>
-    <hr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/styleShop.css" />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header>
+      <!--navBar-->
+      <div class="bg-navbar">
+        <img
+          class="site-img"
+          src="../../multimedia/branding/logo_light_horizontal.svg"
+          alt="isotipo"
+        />
 
-    <table>
-      <tr>
-        <th></th>
-        <th>DETALLE DE PRODUCTO</th>
-        <th>CANTIDAD</th>
-        <th>TOTAL</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td><img src="/multimedia/star-wars/baby-yoda-1.webp" alt=""></td>
-        <td><p><b>BABY YODA BLUEBALL</b></p>
-          <p>START WARS</p><br>
-          <p>precio: $1799.99</p>
-        </td>
-        <td><input type="number" value="2"></td>
-        <td>$3599.98</td>
-        <td><button>X</button></td>
-      </tr>
-      <tr>
-        <td><img src="/multimedia/pokemon/pidgeotto-1.webp" alt=""></td>
-        <td><p><b>PIDGEOTTO</b></p>
-          <p>POKEMON</p><br>
-          <p>precio: $1799.99</p>
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$1799.99</td>
-        <td><button>X</button></td>
-      </tr>
-    </table>
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button
+            type="button"
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            SHOP
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Funkos</a></li>
+            <li><a class="dropdown-item" href="#">Remeras</a></li>
+            <li><a class="dropdown-item" href="#">Llaveros</a></li>
+          </ul>
+          <button type="button">CONTACTO</button>
+          <button type="button">LOGIN</button>
+        </div>
+        <img
+          class="cart-img"
+          src="../../multimedia/icons/cart-icon.svg"
+          alt="cart"
+        />
+      </div>
 
-    <h2>RESUMEN</h2>
-    <hr>
-    <div>
-      <div>
-        <p><b>CANTIDAD DE ELEMENTOS</b></p>
-        <p><b>SUBTOTAL</b></p>
-        <p><b>ENVIO</b></p>
-        <hr>
-        <p><b>TOTAL</b></p>
+      <!--carrito-->
+    </header>
+    <main class="container-carrito">
+      <div class="container-title">
+        <h2 class="cart-title">CARRITO DE COMPRAS</h2>
+        <hr />
       </div>
-      <div>
-        <button>IR A PAGAR</button>
+
+      <section class="container-section">
+        <div class="container-table">
+          <div class="title-table">
+            <p>DETALLE DE PRODUCTO</p>
+            <p>CANTIDAD</p>
+            <p>TOTAL</p>
+          </div>
+        </div>
+
+        <table class="container-table">
+          <tr>
+            <td class="img-cart">
+              <img src="../../multimedia/star-wars/baby-yoda-1.webp" alt="" />
+            </td>
+            <td>
+              <p class="name-cart">BABY YODA BLUEBALL</p>
+              <p class="genre-cart">START WARS</p>
+
+              <p class="price-cart">precio: $1799.99</p>
+            </td>
+            <td>
+              <!--form-->
+              <form
+                action="#"
+                method="POST"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <input
+                  id="contar"
+                  class="input-cart"
+                  type="number"
+                  value="2"
+                  name="contar"
+                />
+                <button id="sumar" class="carrito-item" type="button">+</button>
+                <button id="restar" class="carrito-item" type="button">
+                  -
+                </button>
+              </form>
+            </td>
+            <td class="total-price">$3599.98</td>
+            <td><button class="delete-item">X</button></td>
+          </tr>
+        </table>
+        <table class="container-table">
+          <tr>
+            <td class="img-cart">
+              <img src="../../multimedia/pokemon/pidgeotto-1.webp" alt="" />
+            </td>
+            <td>
+              <p class="name-cart">PIDGEOTTO</p>
+              <p class="genre-cart">POKEMON</p>
+              <p class="price-cart">precio: $1799.99</p>
+            </td>
+            <td>
+              <!--form-->
+              <form
+                action="#"
+                method="POST"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <input
+                  id="contar"
+                  class="input-cart"
+                  type="number"
+                  value="2"
+                  name="contar"
+                />
+                <button id="sumar" class="carrito-item" type="button">+</button>
+                <button id="restar" class="carrito-item" type="button">
+                  -
+                </button>
+              </form>
+            </td>
+            <td class="total-price">$1799.99</td>
+            <td><button class="delete-item">X</button></td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- resumen-->
+      <section class="pagar-section">
+        <div class="container-resumen">
+          <div class="container-subtitle">
+            <h2 class="cart-title">RESUMEN</h2>
+            <hr />
+          </div>
+          <div class="detail-cart">
+            <p>CANTIDAD DE ELEMENTOS</p>
+            <p>SUBTOTAL</p>
+            <p>ENVIO</p>
+            <hr />
+            <p class="name-cart">TOTAL</p>
+          </div>
+
+          <button class="pagar-cart">IR A PAGAR</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <ul>
+          <li><a href="./pages/shop/shop.html">SHOP</a></li>
+          <li><a href="./pages/admin/login.html">INGRESAR</a></li>
+          <li><a href="/">CONTACTO</a></li>
+        </ul>
+        <img src="../../multimedia/branding/isotype.svg" alt="logo" />
       </div>
-    </div>
-  </main>
-  
-</body>
+      <p class="text-footer">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <!-- item js-->
+    <script src="../../js/item.js"></script>
+
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
