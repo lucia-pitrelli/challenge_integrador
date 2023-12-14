@@ -62,16 +62,4 @@ Creadores y editores:
 
 1. Elias Ezequiel Solis
 
-### Mision 5
-
-**Migración de archivos HTML al motor de plantillas EJS**
-
-Creadores y editores:
-
-1. Elias Ezequiel Solis
-
 2. Lucia Belen Pitrelli
-
-### Mision 6
-
-### Mision 7 (Opcional)
