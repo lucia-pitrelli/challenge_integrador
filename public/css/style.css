@@ -1,16 +1,10 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   /*Background-color*/
   --dark-bg-color: #30343f;
   --red-bg-color: #ff3333;
   --light-bg-color: #ffffff;
+
+  --grey-ligth-bg-solid: #fafaff;
 
   /*Font-color*/
   --dark-font-color: #111111;
@@ -20,6 +14,8 @@
   --grey-dark-font-color: #333333;
   --light-font-color: #ffffff;
   --red-font-color: #ff3333;
+
+  --dark-font-solid: #1f1f1f;
 
   /* Font-sizes*/
   --xl-size: 46px;
@@ -50,6 +46,15 @@
   --xs-spacing: 24px;
   --xxs-spacing: 16px;
   --xxxs-spacing: 12px;
+}
+
+/*normalizacion*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*GENERAL - NAVBAR & FOOTER*/

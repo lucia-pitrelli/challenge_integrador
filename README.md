@@ -13,6 +13,7 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
   - Flex
   - Grid
   - Bootstrap
+  - Glidejs
 - JavaScript
 
 ### Mision 1

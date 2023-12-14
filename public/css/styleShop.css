@@ -117,6 +117,17 @@ hr {
 
 .new-item {
   display: flex;
+  width: 2000px;
+}
+
+.glide {
+  max-width: 100%;
+}
+
+.glide .glide__arrow p {
+  color: var(--dark-font-color);
+  background-color: var(--light-bg-color);
+  margin-bottom: 0rem;
 }
 
 .title-new {
@@ -211,7 +222,7 @@ input {
 
 .page {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /*ITEM*/

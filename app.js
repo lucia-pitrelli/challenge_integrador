@@ -7,8 +7,8 @@ const authRoutes = require("./src/routes/authRoutes");
 
 app.use(express.static("public"));
 app.use("/", mainRoutes);
-app.use("/shop", shopRoutes);
-app.use("/admin", adminRoutes);
+app.use("/", shopRoutes);
+app.use("/", adminRoutes);
 app.use("/", authRoutes);
 
 app.listen(4000, () =>
