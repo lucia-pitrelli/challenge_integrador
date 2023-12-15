@@ -59,6 +59,7 @@
 
 /*GENERAL - NAVBAR & FOOTER*/
 /*navbar*/
+
 .bg-navbar {
   background-color: var(--dark-bg-color);
   color: var(--light-font-color);
@@ -67,12 +68,26 @@
   justify-content: space-around;
   width: 1440px;
   height: 100px;
-  padding: 20px;
+  padding: var(--m-spacing);
 }
 
 .bg-navbar .site-img {
-  width: 200px;
+  max-width: 250px;
   height: 50px;
+}
+
+.btn-group a {
+  padding: 5px;
+  margin-left: 30px;
+  background-color: var(--dark-bg-color);
+  color: var(--light-font-color);
+  border-style: none;
+  text-decoration: none;
+  transition: backgroung 0.3s ease-in-out;
+}
+
+.btn-group a:hover {
+  background-color: var(--red-bg-color);
 }
 
 .btn-group button {
@@ -81,6 +96,7 @@
   background-color: var(--dark-bg-color);
   color: var(--light-font-color);
   border-style: none;
+  text-decoration: none;
   transition: backgroung 0.3s ease-in-out;
 }
 
@@ -95,7 +111,7 @@
 .dropdown-item {
   background-color: var(--dark-bg-color);
   color: var(--light-font-color);
-  transition: backgroung 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .bg-navbar .cart-img {
