@@ -3,7 +3,6 @@
   --dark-bg-color: #30343f;
   --red-bg-color: #ff3333;
   --light-bg-color: #ffffff;
-
   --grey-ligth-bg-solid: #fafaff;
 
   /*Font-color*/
@@ -14,7 +13,6 @@
   --grey-dark-font-color: #333333;
   --light-font-color: #ffffff;
   --red-font-color: #ff3333;
-
   --dark-font-solid: #1f1f1f;
 
   /* Font-sizes*/
@@ -41,11 +39,13 @@
   /*Spacing*/
   --xl-spacing: 128px;
   --l-spacing: 68px;
+  --spacing-48: 48px;
   --m-spacing: 36px;
   --s-spacing: 28px;
   --xs-spacing: 24px;
   --xxs-spacing: 16px;
   --xxxs-spacing: 12px;
+  --spacing-8: 8px;
 }
 
 /*normalizacion*/

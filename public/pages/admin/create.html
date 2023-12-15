@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/styleadmin.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <title>Create</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/styleadmin.css">
-  <link rel="stylesheet" href="../../css/styleadmin.css">
-  <title>Create</title>
-</head>
+  <body>
+    <header>
+      <!--navBar-->
+      <div class="bg-navbar">
+        <img
+          class="site-img"
+          src="../../multimedia/branding/logo_light_horizontal.svg"
+          alt="isotipo"
+        />
 
-<body>
-  <header>
-    <nav class="navbar container">
-
-      <picture class="navbar__logo">
-        <a href="../../index.html">
-          <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="aca el logo...">
-        </a>
-      </picture>
-
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a class="navbar__link" href="">VER TIENDA</a>
-        </li>
-
-        <li class="navbar__item">
-          <a class="navbar__link" href="">ADMIN</a>
-        </li>
-
-        <li class="navbar__item">
-          <a class="navbar__link" href="">SALIR</a>
-        </li>
-
-      </ul>
-    </nav>
-
-  </header>
-  <!--Form-->
-  <section class="create container">
-    <h1 class="create__title">CREAR NUEVO ITEM</h1>
-
-    <form class="form-create" action="" method="post">
-
-      <!--categoria-->
-      <div class="form-create-parte1">
-        <div class="create__form-box">
-          <label class="form-create-label" for="categoria">Categoría:</label>
-          <select class="create-select" id="categoria" name="categoria">
-            <option value="cate1">seleccionar</option>
-            <option value="cate2">categoria 2</option>
-            <option value="cate3">categoria 3</option>
-          </select>
-        </div>
-
-        <!--licencia-->
-        <div class="create__form-box">
-          <label class="form-create-label" for="licencia">Licencia:</label>
-          <select class="create-select" id="licencia" name="licencia">
-            <option value="cate1">seleccionar</option>
-            <option value="cate2">licencia 2</option>
-            <option value="cate3">licencia 3</option>
-          </select>
+        <div class="btn-group">
+          <a href="../shop/shop.html" type="button">VER TIENDA</a>
+          <a href="../admin/admin.html" type="button">ADMIN</a>
+          <a href="/" type="button">SALIR</a>
         </div>
       </div>
+    </header>
+    <!--Form-->
+    <section class="create container">
+      <h1 class="create__title">CREAR NUEVO ITEM</h1>
 
+      <form class="form-create" action="" method="post">
+        <!--categoria-->
+        <div class="form-create-parte1">
+          <div class="create__form-box">
+            <label class="form-create-label" for="categoria">Categoría:</label>
+            <select class="create-select" id="categoria" name="categoria">
+              <option value="cate1">Seleccionar</option>
+              <option value="cate2">categoria 2</option>
+              <option value="cate3">categoria 3</option>
+            </select>
+          </div>
 
-      <!--producto-->
-      <div class="create__form-box">
-        <label class="form-create-label" for="producto">Nombre del producto:</label>
-        <input class="create-input" type="text" id="producto" name="producto" />
+          <!--licencia-->
+          <div class="create__form-box">
+            <label class="form-create-label" for="licencia">Licencia:</label>
+            <select class="create-select" id="licencia" name="licencia">
+              <option value="cate1">Seleccionar</option>
+              <option value="cate2">licencia 2</option>
+              <option value="cate3">licencia 3</option>
+            </select>
+          </div>
+        </div>
+
+        <!--producto-->
+        <div class="create__form-box">
+          <label class="form-create-label" for="producto"
+            >Nombre del producto:</label
+          >
+          <input
+            class="create-input"
+            type="text"
+            id="producto"
+            name="producto"
+          />
+        </div>
+
+        <!--descripcion-->
+        <div class="create__form-box">
+          <textarea placeholder="Descripción del producto"></textarea>
+        </div>
+
+        <!--SKU-->
+        <div class="form-create-parte1">
+          <div class="create__form-box">
+            <label class="form-create-label" for="sku">SKU:</label>
+            <input
+              class="create-input"
+              type="number"
+              id="sku"
+              name="sku"
+              placeholder="SSK111AB001"
+            />
+          </div>
+
+          <!--precio-->
+          <div class="create__form-box">
+            <label class="form-create-label" for="precio">Precio:</label>
+            <input
+              class="create-input"
+              type="number"
+              id="precio"
+              name="precio"
+              placeholder="$0"
+            />
+          </div>
+
+          <!--stock-->
+          <div class="create__form-box">
+            <label class="form-create-label" for="stock">Stock:</label>
+            <input
+              class="create-input"
+              type="number"
+              id="stock"
+              name="stock"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <!--descuento-->
+        <div class="form-create-parte1">
+          <div class="create__form-box">
+            <label class="form-create-label" for="descuento">Descuento:</label>
+            <input
+              class="create-input"
+              type="number"
+              id="descuento"
+              name="descuento"
+              placeholder="0%"
+            />
+          </div>
+
+          <!--cuotas-->
+          <div class="create__form-box">
+            <label class="form-create-label" for="cuotas">Cuotas:</label>
+            <select class="create-select" id="cuotas" name="cuotas">
+              <option value="3">3 cuotas sin interés</option>
+              <option value="6">6 cuotas sin interés</option>
+              <option value="12">12 cuotas sin interés</option>
+            </select>
+          </div>
+        </div>
+        <!--imagenes-->
+        <div class="create__form-box">
+          <label class="form-create-label" for="image">Imágenes:</label>
+          <input type="file" id="image" name="image" />
+        </div>
+
+        <div class="form-create-parte1">
+          <!--agregar-->
+          <input class="create-btn" type="submit" value="Agregar Producto" />
+          <!--limpiar-->
+          <input class="create-btn" type="reset" value="Limpiar" />
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <ul>
+          <li><a href="./shop.html">SHOP</a></li>
+          <li><a href="../admin/register.html">REGISTRARSE</a></li>
+          <li><a href="../admin/login.html">INGRESAR</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+        <img src="../../multimedia/branding/isotype.svg" alt="logo" />
       </div>
-
-      <!--descripcion-->
-      <div class="create__form-box">
-        <textarea  placeholder="Descripción del producto"></textarea>
-      </div>
-
-      <!--SKU-->
-      <div class="form-create-parte1">
-      <div class="create__form-box">
-        <label class="form-create-label" for="sku">SKU:</label>
-        <input class="create-input"  type="number" id="sku" name="sku" placeholder="SSK111AB001" />
-      </div>
-
-      <!--precio-->
-      <div class="create__form-box">
-        <label class="form-create-label" for="precio">Precio:</label>
-        <input class="create-input"  type="number" id="precio" name="precio" placeholder="$0" />
-      </div>
-
-
-      <!--stock-->
-      <div class="create__form-box">
-        <label class="form-create-label" for="stock">Stock:</label>
-        <input class="create-input"  type="number" id="stock" name="stock" placeholder="0" />
-      </div>
-    </div>
-
-      <!--descuento-->
-      <div class="form-create-parte1">
-      <div class="create__form-box">
-        <label class="form-create-label" for="descuento">Descuento:</label>
-        <input class="create-input"  type="number" id="descuento" name="descuento" placeholder="0%" />
-      </div>
-
-
-      <!--cuotas-->
-      <div class="create__form-box">
-        <label class="form-create-label" for="cuotas">Cuotas:</label>
-        <select class="create-select" id="cuotas" name="cuotas">
-          <option value="3">3 cuotas sin interés</option>
-          <option value="6">6 cuotas sin interés</option>
-          <option value="12">12 cuotas sin interés</option>
-        </select>
-      </div>
-    </div>
-      <!--imagenes-->
-      <div class="create__form-box">
-        <label class="form-create-label" for="image">Imágenes:</label>
-        <input type="file" id="image" name="image" />
-      </div>
-
-      <div class="form-create-parte1">
-        <!--agregar-->
-        <input class="create-btn" type="submit" value="Agregar Producto" />
-        <!--limpiar-->
-        <input class="create-btn" type="reset" value="Limpiar" />
-      </div>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <nav class="navbar container">
-      <ul class="navbar__item">
-        <li class="navbar__item">
-          <a class="navbar__link">SHOP</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="">REGISTRARSE</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="">INGRESAR</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="">CONTACTO</a>
-        </li>
-      </ul>
-      <picture class="">
-        <img src="../../multimedia/branding/isotype.svg" alt="aca un logo">
-      </picture>
-    </nav>
-    <p class="footer__copy">All rights reserved 2023 - Funkshop &copy;</p>
-  </footer>
-</body>
-
+      <p class="text-footer">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+  </body>
 </html>
