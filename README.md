@@ -66,3 +66,6 @@ Creadores y editores:
 2. Lucia Belen Pitrelli
 
 **Mision 4 en proceso**
+
+run dev: nodemon app.js
+servidor: http://localhost:4000

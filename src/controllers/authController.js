@@ -1,4 +1,4 @@
-const authControllers = {
+/*const authControllers = {
     loginGet:(req, res) => res.send("Ruta para loguearse"),
     loginPost:(req, res) => res.send("Ruta para enviar al admin logueado"),
     registerGet:(req, res) => res.send("Ruta para registrarse"),
@@ -7,4 +7,4 @@ const authControllers = {
 
 }
 
-module.exports = authControllers;
+module.exports = authControllers;*/
