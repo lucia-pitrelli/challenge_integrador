@@ -1,4 +1,4 @@
-const shopControllers = {
+/*const shopControllers = {
   shop: (req, res) => res.send("Ruta ver para pagina de shop"),
   item: (req, res) => res.send("Ruta para ver pagina shop con item"),
   itemPost: (req, res) => res.send("Ruta para agregar un item"),
@@ -7,3 +7,4 @@ const shopControllers = {
 };
 
 module.exports = shopControllers;
+*/

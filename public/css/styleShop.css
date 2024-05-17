@@ -212,6 +212,10 @@ hr {
   padding-top: 15px;
 }
 
+.new-bg {
+  padding: 20px;
+}
+
 /*REVISAR*/
 input {
   text-align: center;
@@ -292,6 +296,7 @@ input {
 
 .container-section {
   margin-top: 200px;
+  margin-left: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,7 +309,6 @@ input {
   border: 3px solid var(--grey-font-color);
   border-radius: 25px;
   display: flex;
-  justify-content: space-around;
   padding: 10px;
 }
 
@@ -339,7 +343,7 @@ th {
 td {
   padding-left: 20px;
   padding-right: 20px;
-  width: 27%;
+  /*width: 27%;*/
 }
 
 .name-cart {
