@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 const adminControllers = require("../controllers/adminController");
 
@@ -10,3 +10,4 @@ router.put("/admin/edit/:id", adminControllers.editPut);
 router.delete("/admin/delete/:id", adminControllers.delete);
 
 module.exports = router;
+*/

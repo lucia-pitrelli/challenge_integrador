@@ -14,14 +14,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/styleShop.css" />
     <!--glidejs css CDN-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
-    />
+    <link rel="stylesheet" href="./css/glide.core.min.css" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" />
     <title>Home</title>
   </head>
   <body>
@@ -44,21 +38,24 @@
             SHOP
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Funkos</a></li>
-            <li><a class="dropdown-item" href="#">Remeras</a></li>
-            <li><a class="dropdown-item" href="#">Llaveros</a></li>
+            <li>
+              <a class="dropdown-item" href="./pages/shop/shop.html">Funkos</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Nosotros</a></li>
+            <li><a class="dropdown-item" href="#">Contacto</a></li>
           </ul>
           <div>
-            <a href="./pages/admin/login.html" type="button">INGRESAR</a>
-            <a href="./pages/admin/register.html" type="button">REGISTRARSE</a>
+            <a href="login.html" type="button">INGRESAR</a>
+            <a href="register.html" type="button">REGISTRARSE</a>
             <a href="#" type="button">CONTACTO</a>
           </div>
         </div>
-        <img
-          class="cart-img"
-          src="./multimedia/icons/cart-icon.svg"
-          alt="cart"
-        />
+        <a href="./pages/shop/carrito.html"
+          ><img
+            class="cart-img"
+            src="./multimedia/icons/cart-icon.svg"
+            alt="cart"
+        /></a>
       </div>
 
       <!--banner-->
@@ -68,7 +65,7 @@
         <h3 class="text-banner">
           Descubrí el próximo Funko Pop de tu colección
         </h3>
-        <a class="link-shop" href="./pages/shop.html">Shop</a>
+        <a class="link-shop" href="./pages/shop/shop.html">Shop</a>
       </div>
     </header>
     <main>
@@ -81,7 +78,7 @@
               Disfruta de una saga que sigue agregando personajes a su colección
             </p>
             <hr />
-            <a class="link-item" href="./pages/shop.html">Ver colección</a>
+            <a class="link-item" href="./pages/shop/shop.html">Ver colección</a>
           </div>
 
           <div class="item">
@@ -107,7 +104,7 @@
               amigos
             </p>
             <hr />
-            <a class="link-item" href="./pages/shop.html">Ver colección</a>
+            <a class="link-item" href="./pages/shop/shop.html">Ver colección</a>
           </div>
         </article>
 
@@ -119,7 +116,7 @@
               Revive los recuerdos de una saga llena de magia y encanto
             </p>
             <hr />
-            <a class="link-item" href="./pages/shop.html">Ver colección</a>
+            <a class="link-item" href="./pages/shop/shop.html"">Ver colección</a>
           </div>
 
           <div class="item">
@@ -132,10 +129,10 @@
       </section>
 
       <!--ultimos lanzamientos-->
-      <section class="container-new glide">
+      <section class="container-n glide">
         <h2 class="title-new">ÚLTIMOS LANZAMIENTOS</h2>
         <div class="glide__track" data-glide-el="track">
-          <div class="new-item glide__slides">
+          <div class="glide__slides">
             <div class="new-bg glide__slide">
               <p class="new">NUEVO</p>
               <picture class="card-item-cover">
@@ -210,7 +207,7 @@
       <div class="container-footer">
         <ul>
           <li><a href="./pages/shop/shop.html">SHOP</a></li>
-          <li><a href="./pages/admin/login.html">INGRESAR</a></li>
+          <li><a href="login.html">INGRESAR</a></li>
           <li><a href="/">CONTACTO</a></li>
         </ul>
         <img src="./multimedia/branding/isotype.svg" alt="logo" />
@@ -232,13 +229,16 @@
       new Glide(".glide", {
         type: "carousel",
         startAt: 0,
-        perView: 3,
+        perView: 4,
         gap: 30,
         breakpoints: {
           991: {
-            perView: 2,
+            perView: 3,
           },
           768: {
+            perView: 2,
+          },
+          480: {
             perView: 1,
           },
         },

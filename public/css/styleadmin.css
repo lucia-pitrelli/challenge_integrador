@@ -20,6 +20,7 @@ ol {
   justify-content: center;
   align-items: stretch;
   gap: var(--m-spacing);
+  max-width: 1200px;
 }
 
 .login__title {
@@ -258,4 +259,35 @@ ol {
 .buscar {
   color: var(--dark-font-color);
   font-weight: var(--l-weight);
+}
+
+/*responsive design: From desktop to mobile*/
+
+/*version mobile*/
+@media screen and (max-width: 480px) {
+  /*login*/
+  .login__title {
+    font-size: var(--xxs-size);
+  }
+
+  .login__form__label {
+    font-size: var(--xxs-size);
+  }
+
+  .login__form__textbox {
+    font-size: var(--xxs-size);
+  }
+
+  .login__form__btn {
+    font-size: var(--xxxs-size);
+    padding: var(--xxxs-spacing);
+  }
+
+  .login__form-recuerdame {
+    font-size: var(--xxxs-size);
+  }
+
+  .login__form-olvidar {
+    font-size: var(--xxxs-size);
+  }
 }
