@@ -12,17 +12,6 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
 
 2. Lucia Belen Pitrelli
 
-### Integrantes:
-
-1. Elias Ezequiel Solis
-
-2. Lucia Belen Pitrelli
-
-### Integrantes:
-
-1. Elias Ezequiel Solis
-
-2. Lucia Belen Pitrelli
 
 ## ⚙️ Lenguajes Utilizados:
 
@@ -33,32 +22,17 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
   - Bootstrap
   - Glidejs
 - JavaScript
+  
 
 ### Mision 1 : **Creación de la estructura HTML de las diferentes vistas del proyecto, utilizando como referencia el diseño en**
 
 https://www.figma.com/file/IjTSeE2BpRd5Gk9VakNIhC/Challenge-Integrador---Funkoshop?type=design&node-id=19905-435&mode=design&t=hfdjsO9WWpVgOzSA-0
 
-Creadores y editores:
-
-1. Elias Ezequiel Solis - _Pages: Shop y Admin_
-
-2. Lucia Belen Pitrelli - _Pages: Login, Index, Create , Edit y Register_
-
-3. Nahuel Frias - _Pages: Item y Carrito_
-
-**Mision 1 completa**
 
 ### Mision 2
 
 **Maquetación y estilos mediante CSS de todos los elementos de cada página.**
 
-Creadores y editores:
-
-1. Lucia Belen Pitrelli - _Pages: Index, Shop, Item y Carrito_
-
-2. Elias Ezequiel Solis - _Pages: Admin, Create, Edit, Login, Register_
-
-**Mision 2 completa**
 
 ### Mision 3
 
